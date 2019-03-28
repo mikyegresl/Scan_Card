@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<android.support.constraint.ConstraintLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="10sp"-->
+        <!--android:layout_marginBottom="10sp">-->
+
+        <ImageView
+            android:id="@+id/scannedBitmap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<com.example.gamezale.Scan.GraphicOverlay-->
+            <!--android:id="@+id/graphicOverlay"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="0dp"-->
+            <!--app:layout_constraintStart_toStartOf="@id/scannedBitmap"-->
+            <!--app:layout_constraintEnd_toEndOf="@id/scannedBitmap"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/scannedBitmap"-->
+            <!--app:layout_constraintBottom_toBottomOf="@+id/scannedBitmap"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/scannedBitmap"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/scannedBitmap" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addNameEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Full Name"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="textPersonName"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/graphicOverlay"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addPhoneEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/graphicOverlay"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/graphicOverlay"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addPhoneEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Phone"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="phone"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addNameEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addEmailEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addNameEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addNameEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addEmailEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Email"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="textEmailAddress"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addPhoneEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addGroupEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addPhoneEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addPhoneEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addGroupEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Group"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="text"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addEmailEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addCompanyEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addEmailEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addEmailEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addCompanyEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Company"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="text"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addGroupEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addPositionEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addGroupEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addGroupEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addPositionEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Position"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="text"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addCompanyEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addStreetEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addCompanyEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addCompanyEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addStreetEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Street"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="textPostalAddress"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addPositionEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addDistrictEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addPositionEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addPositionEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addDistrictEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="District"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="textPostalAddress"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addStreetEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addCityEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addStreetEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addStreetEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addCityEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="City"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="textPostalAddress"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addDistrictEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addWebsiteEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addDistrictEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addDistrictEditText"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/addWebsiteEditText"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Website"-->
+            <!--android:layout_marginTop="10sp"-->
+            <!--android:layout_marginLeft="25sp"-->
+            <!--android:layout_marginRight="25sp"-->
+            <!--android:padding="5sp"-->
+            <!--android:inputType="text"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addCityEditText"-->
+            <!--app:layout_constraintBottom_toTopOf="@+id/addBtn"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addCityEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addCityEditText"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/addBtn"-->
+            <!--android:layout_width="150sp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Add"-->
+            <!--android:layout_marginTop="30sp"-->
+            <!--android:layout_marginBottom="100sp"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addWebsiteEditText"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addWebsiteEditText"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addWebsiteEditText"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="100sp"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/addBtn"-->
+            <!--app:layout_constraintLeft_toLeftOf="@+id/addBtn"-->
+            <!--app:layout_constraintRight_toRightOf="@+id/addBtn"/>-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+</ScrollView>
+
+

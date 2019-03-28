@@ -1,0 +1,4 @@
+#Thu Feb 14 17:57:07 UZT 2019
+base.0=/home/mikeygresl/AndroidStudioProjects/GameZale/app/build/intermediates/dex/release/mergeDexRelease/out
+path.0=classes.dex
+renamed.0=classes.dex

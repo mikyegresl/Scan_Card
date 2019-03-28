@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "593622280954",
+    "firebase_url": "https://gamezale-bf740.firebaseio.com",
+    "project_id": "gamezale-bf740",
+    "storage_bucket": "gamezale-bf740.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593622280954:android:d302b46d81259b72",
+        "android_client_info": {
+          "package_name": "com.example.gamezale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593622280954-tuk2npc2is0jift6rb7g4adpbgeoac0b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gamezale",
+            "certificate_hash": "7031e79c3cd56eedd314e9fe933186458aa720b0"
+          }
+        },
+        {
+          "client_id": "593622280954-6j1u2g3gor4uuso53jlkn5sh1tn8jer9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1-thlkfi0KrjzsnV1VLQPRoQJyW6nd3M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593622280954-6j1u2g3gor4uuso53jlkn5sh1tn8jer9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

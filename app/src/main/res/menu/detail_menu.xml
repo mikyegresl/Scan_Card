@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/action_nfc"
+            android:icon="@mipmap/icon_nfc"
+            android:title="NFC"/>
+        <item
+            android:id="@+id/action_qr"
+            android:icon="@mipmap/icon_qr"
+            android:title="QR code"/>
+        <item
+            android:id="@+id/action_bluetooth"
+            android:icon="@mipmap/icon_blootooth"
+            android:title="Bluetooth"/>
+    </group>
+    <group>
+        <item
+            android:id="@+id/action_telegram"
+            android:icon="@mipmap/icon_tlgrm"
+            android:title="Telegram"/>
+        <item
+            android:id="@+id/action_gmail"
+            android:icon="@mipmap/icon_gmail"
+            android:title="Gmail"/>
+        <item
+            android:id="@+id/action_sms"
+            android:icon="@mipmap/icon_sms"
+            android:title="Message"/>
+    </group>
+</menu>

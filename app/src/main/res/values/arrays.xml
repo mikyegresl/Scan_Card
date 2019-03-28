@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dialogItems">
+        <item>QR code</item>
+        <item>NFC</item>
+    </array>
+    <array name="addContactItems">
+        <item>QR code</item>
+        <item>NFC</item>
+        <item>Scan</item>
+        <item>Text</item>
+    </array>
+</resources>

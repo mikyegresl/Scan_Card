@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:orientation="horizontal"
+    android:layout_margin="20sp"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/editCustomIV"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:padding="5sp"
+        android:src="@mipmap/icon_edit_info"/>
+
+    <TextView
+        android:id="@+id/editCustomTV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Edit my info"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

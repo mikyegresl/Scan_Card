@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@mipmap/icon_heart"
+            android:title="Favorites"/>
+        <item
+            android:id="@+id/nav_usage"
+            android:icon="@mipmap/icon_faq"
+            android:title="How to use"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@mipmap/icon_setting"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@mipmap/icon_sync"
+            android:title="Sync contacts"/>
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@mipmap/icon_exit"
+            android:title="Exit"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_theme"
+            android:icon="@mipmap/icon_eye"
+            android:title="Blue style"/>
+    </group>
+
+</menu>

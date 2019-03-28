@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">uCard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signinTextView"><u>Sign In</u></string>
+    <string name="signupTextView"><u>Sign Up</u></string>
+    <string name="navigation_drawer_open">Drawer Open</string>
+    <string name="navigation_drawer_close">Drawer Closed</string>
+    <string-array name="types">
+        <item>Mobile</item>
+        <item>Work</item>
+        <item>Home</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

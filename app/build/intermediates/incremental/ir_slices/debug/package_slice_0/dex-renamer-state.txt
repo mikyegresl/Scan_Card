@@ -1,0 +1,4 @@
+#Fri Mar 29 02:20:25 UZT 2019
+base.0=/home/mikeygresl/AndroidStudioProjects/GameZale/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

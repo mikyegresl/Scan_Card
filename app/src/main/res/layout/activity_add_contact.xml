@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/addContactContainer"
+    android:background="#fff"
+    tools:context=".AddContactActivity">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150sp">
+
+            <LinearLayout
+                android:id="@+id/blueBackground"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:background="@color/colorLightBlue"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15sp"/>
+
+                <TextView
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15sp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/addIconImageView"
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:layout_alignBottom="@+id/blueBackground"
+                android:layout_marginTop="27sp"
+                android:src="@mipmap/img_upload" />
+
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/addNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/addPhoneMobileEditText"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/phoneTypeMobile"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="top"
+                android:hint="Mobile"
+                android:enabled="false"
+                android:textColorHint="@color/colorDarkBlue"/>
+
+            <ImageView
+                android:id="@+id/addPhoneBtn"
+                android:layout_marginLeft="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/remove"
+                android:enabled="false"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneWorkLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/addPhoneWorkEditText"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone (Optional)"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/phoneTypeWork"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="top"
+                android:hint="Work"
+                android:enabled="false"
+                android:textColorHint="@color/colorDarkBlue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneHomeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/addPhoneHomeEditText"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone (Optional)"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/phoneTypeHome"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_gravity="top"
+                android:hint="Home"
+                android:enabled="false"
+                android:textColorHint="@color/colorDarkBlue"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress" />
+
+
+        <LinearLayout
+            android:id="@+id/addAddressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/addAddressEditText"
+                android:layout_width="320sp"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:enabled="false"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/addAdressBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@mipmap/remove" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addStreetEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street, Building"
+            android:layout_margin="10dp"
+            android:inputType="textPostalAddress"/>
+
+        <EditText
+            android:id="@+id/addCityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:layout_margin="10dp"
+
+            android:inputType="textPostalAddress"/>
+
+        <EditText
+            android:id="@+id/addGroupEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Group"
+            android:layout_margin="10dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/addCompanyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Company"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/addPositionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Position"
+            android:layout_margin="10dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/addWebsiteEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Website"
+            android:layout_margin="10dp"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+</ScrollView>

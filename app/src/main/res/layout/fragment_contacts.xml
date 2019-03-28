@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:background="#fff">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:background="?attr/colorBackgroundFloating"
+                android:elevation="4sp"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <EditText
+                    android:id="@+id/searchContactEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:hint="Search person"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_marginBottom="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginRight="25sp"
+                    android:cursorVisible="false"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="80dp"
+                android:id="@+id/contactsRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:id="@+id/menuFab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                app:menu_fab_label=""
+                android:saveEnabled="false"
+
+                app:menu_colorNormal="@color/colorLightBlue"
+                app:menu_colorRipple="@color/colorLightBlue"
+                app:menu_colorPressed="@color/colorLightBlue"
+                app:menu_openDirection="up"
+                app:menu_showShadow="true"
+                android:layout_margin="16dp">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/scanCardBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_label="Scan Business Card"
+                    android:src="@mipmap/icon_card"
+                    app:fab_size="mini"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/typeManualBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_label="Type Manual"
+                    android:src="@mipmap/icon_type"
+                    app:fab_size="mini"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/scanQRBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_label="Scan QR"
+                    android:src="@mipmap/icon_qr"
+                    app:fab_size="mini"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/nfcBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fab_label="NFC"
+                    android:src="@mipmap/icon_nfc"
+                    app:fab_size="mini"/>
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+
+
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+            android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/drawer_header">
+
+        </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
